@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "template-typescript-bottom-tabs-supabase-auth-flow",
-    "slug": "template-typescript-bottom-tabs-supabase-auth-flow",
+    "name": "xezar-app",
+    "slug": "xezar-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

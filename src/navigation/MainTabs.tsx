@@ -8,6 +8,8 @@ import TabBarText from "../components/utils/TabBarText";
 import Home from "../screens/Home";
 import About from "../screens/About";
 import Profile from "../screens/Profile";
+import Akun from "../screens/Akun";
+import Qris from "../screens/Qris";
 
 const Tabs = createBottomTabNavigator();
 const MainTabs = () => {
@@ -48,11 +50,36 @@ const MainTabs = () => {
         }}
       />
       <Tabs.Screen
+        name="Qris"
+        component={Qris}
+        options={{
+          tabBarLabel: ({ focused }) => (
+            <TabBarText focused={focused} title="Qris" />
+          ),
+          tabBarIcon: ({ focused }) => (
+            <TabBarIcon focused={focused} icon={"ios-information-circle"} />
+          ),
+        }}
+        style={{ borderTopColor: '#605F60' }}
+      />
+      <Tabs.Screen
         name="About"
         component={About}
         options={{
           tabBarLabel: ({ focused }) => (
             <TabBarText focused={focused} title="About" />
+          ),
+          tabBarIcon: ({ focused }) => (
+            <TabBarIcon focused={focused} icon={"ios-information-circle"} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Akun"
+        component={Akun}
+        options={{
+          tabBarLabel: ({ focused }) => (
+            <TabBarText focused={focused} title="Akun" />
           ),
           tabBarIcon: ({ focused }) => (
             <TabBarIcon focused={focused} icon={"ios-information-circle"} />

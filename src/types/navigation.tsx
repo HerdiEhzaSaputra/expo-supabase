@@ -13,4 +13,5 @@ export type MainTabsParamList = {
 	Home: undefined;
 	Profile: undefined;
 	About: undefined;
+	Akun: undefined,
 };
